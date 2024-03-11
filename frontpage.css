@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #432818;
+}
+
+.container
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background: #ffe6a7;
+    padding:15px;
+    justify-content: space-evenly;
+}
+
+.pict-logo{
+    height:50px;
+    width:100px;
+    border:2px solid black;   
+}
+
+.search-bar{
+    margin-top: 20px;
+    width: 50%;
+    height: 2%;
+    max-height: 100px;
+    max-width: 600px;
+    background-color: #ffe6a7;
+    display : flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px 10px;
+    backdrop-filter: blur(4px) saturate(180%)
+ } 
+
+ .search-bar input{
+    background: transparent;
+    flex: 1;
+    width: 1;
+    height: 0.5% ;
+    max-height:1px;
+    border-radius:60px ;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #432818;
+    border-color: black;
+ }
+ ::placeholder{
+    color: #432818;
+ }
+ .search-bar button img{
+    width: 15px;
+ }
+ .search-bar button{
+    margin-left: 5px;
+    border:2px solid #432818;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color:#ffe6a7;
+    background-color:#432818;
+    font-size: 25px;
+    cursor: pointer;
+ }
+
+ .icons-bar{  
+    padding: 10px;
+    font-size: 2rem;
+    margin-right:10px;
+    color:#432818;
+ }
+ 
+.link{
+    text-decoration: none;
+    color:#432818;
+}
+
+.link:visited{
+    color:#432818;
+ }
+ 
+
+/*.logo .menu-icon{
+   color: #333;
+   font-size:24px;
+   margin-right: 14px;
+   cursor: pointer;
+   background-color: #87c8f4;
+}*/
+.logo .logo-name{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   margin: 10px;
+   color: #432818;
+   font-style: bold;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+   font-weight: 700;
+   background-color: #ffe6a7;
+   border-radius: 8px;
+}
+nav .sidebar{
+   /* position: fixed; */
+   /* display: inline-block; */
+   top:162px;
+   /* height:100%; */
+   width: 261px;
+   padding: 20px 0;
+   /* background-color: #ffffff; */
+   box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+   margin-left: 20px;
+}
+.sidebar .sidebar-content{
+    background-color: #ffe6a7;
+   padding: 30px 16px;
+   margin:10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   border-radius: 8px;
+}
+.sidebar-content .list{
+   list-style: none;
+   /* display: flex; */
+}
+.list .nav-link{
+   display: flex;
+   height: 75px;
+   align-items: center;
+   padding: 14px 12px;
+   border-radius:8px ;
+   background-color: #ffe6a7;
+   text-decoration: none;
+   border:2px solid black;
+}
+.nav-link:hover{
+   background-color:#e7c97d;
+}
+.nav-link .link{
+   font-size: 16px;
+   color: #432818;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 900;
+}
+/* .card{
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    
+    margin-top: 100px;
+    display: inline-block;
+    height: 500;
+    width: 800;
+    padding-left: 700;
+    padding-right: 200;
+} */
+/* .card-img-top{
+    
+}
+ */
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav{
+    display:inline-block;
+    vertical-align: top;
+    margin-right:60px;
+ }
+.post{
+    height: 85vh;
+    width: 90vh;
+    background-color: #ffe6a7;
+    margin: 30px;
+}
+.post-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.post .write{
+   
+    margin: 30px 10px 30px 10px;
+}
+.post .logo{
+    height: 70px;
+    width:70px;
+    background-image: url("pictoreal\ logo.png"); 
+    background-size: cover;
+    margin: 10px 60px 10px 10px;
+}
+.write{
+    padding-left: 65px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.write #club-id{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+.write #club-name{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+.post .poster{
+    height: 100px;
+    width:100px;
+    background-image: url("pictofest.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height:22rem;
+    width:25rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 85px;
+}
+
+.post .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin:30px;
+    cursor: pointer;
+}
+
+.recomend{
+    margin-top:30px;
+    margin-left:62px;
+    height:100vh;
+    width:40vh;
+   padding: 20px 0;
+   box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+   background-color: #ffe6a7;
+   border-radius: 8px;
+}
+
+.recomend .name{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight:bold;
+    margin-left: 20px;
+}
+
+.recomend .lists2{
+    margin:20px;
+    height:50px;
+    width:200px;
+    border:2px solid transparent;
+    padding:2px 1px 15px 1px;
+
+}
+.lists2 .list2{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    padding:10px;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.list2:hover{
+    border:2px solid black;
+}
+
+
+
