@@ -6,7 +6,7 @@
 }
 body
 {
-    background: #432818;
+    background: white;
 }
 
 .container
@@ -16,15 +16,18 @@ body
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    background: #ffe6a7;
-    padding:15px;
+    background: #BED1CF;
+    padding:15px 0px 15px 0px;
     justify-content: space-evenly;
 }
 
 .pict-logo{
     height:50px;
-    width:100px;
-    border:2px solid black;   
+    
+    color: rgb(33, 69, 90); 
+    font-weight: bolder;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .search-bar{
@@ -33,7 +36,7 @@ body
     height: 2%;
     max-height: 100px;
     max-width: 600px;
-    background-color: #ffe6a7;
+    background-color: #BED1CF;
     display : flex;
     align-items: center;
     border-radius: 50px;
@@ -51,23 +54,23 @@ body
     outline: none;
     padding: 24px 20px;
     font-size: 20px;
-    color: #432818;
+    color: rgb(33, 69, 90);
     border-color: black;
  }
  ::placeholder{
-    color: #432818;
+    color:rgb(33, 69, 90);
  }
  .search-bar button img{
     width: 15px;
  }
  .search-bar button{
     margin-left: 5px;
-    border:2px solid #432818;
+    border:2px solid #BED1CF;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    color:#ffe6a7;
-    background-color:#432818;
+    color:#BED1CF;
+    background-color:rgb(33, 69, 90);
     font-size: 25px;
     cursor: pointer;
  }
@@ -76,16 +79,16 @@ body
     padding: 10px;
     font-size: 2rem;
     margin-right:10px;
-    color:#432818;
+    color:rgb(33, 69, 90);
  }
  
 .link{
     text-decoration: none;
-    color:#432818;
+    color:rgb(33, 69, 90);
 }
 
 .link:visited{
-    color:#432818;
+    color:rgb(33, 69, 90);
  }
  
 
@@ -102,12 +105,12 @@ body
    justify-content: center;
    height: 50px;
    margin: 10px;
-   color: #432818;
+   color: rgb(33, 69, 90);
    font-style: bold;
    font-family: 'Times New Roman', Times, serif;
    font-size: 30px;
    font-weight: 700;
-   background-color: #ffe6a7;
+   background-color:#BED1CF;
    border-radius: 8px;
 }
 nav .sidebar{
@@ -116,13 +119,13 @@ nav .sidebar{
    top:162px;
    /* height:100%; */
    width: 261px;
-   padding: 20px 0;
+   margin-top: 20px;
    /* background-color: #ffffff; */
    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
    margin-left: 20px;
 }
 .sidebar .sidebar-content{
-    background-color: #ffe6a7;
+    background-color: #BED1CF;
    padding: 30px 16px;
    margin:10px;
    display: flex;
@@ -140,16 +143,16 @@ nav .sidebar{
    align-items: center;
    padding: 14px 12px;
    border-radius:8px ;
-   background-color: #ffe6a7;
+   background-color: #BED1CF;
    text-decoration: none;
    border:2px solid black;
 }
 .nav-link:hover{
-   background-color:#e7c97d;
+   background-color:#9cc4c0;
 }
 .nav-link .link{
    font-size: 16px;
-   color: #432818;
+   color: rgb(33, 69, 90);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: 900;
 }
@@ -182,42 +185,59 @@ nav{
     vertical-align: top;
     margin-right:60px;
  }
-.post{
-    height: 85vh;
-    width: 90vh;
-    background-color: #ffe6a7;
-    margin: 30px;
+
+.main_body .self-post{
+    height: 200px;
+    width:90vh;
+    background-color:#BED1CF ;
+    margin:30px;
+    border-radius: 8px;
 }
-.post-nav{
-    display: flex;
-    flex-direction: row;
+.mypost .myprofile{
+    height: 150px;
+    width:150px;
+
 }
 
-.post .write{
+.main_body .post{
+    height: 85vh;
+    width: 90vh;
+    background-color:#BED1CF;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+    border-radius: 8px;
+}
+.main_body .post-nav{
+    display: flex;
+    flex-direction: row;
+    color:rgb(21, 55, 75);
+}
+
+.main_body .post .write{
    
     margin: 30px 10px 30px 10px;
 }
-.post .logo{
+.main_body .post .logo{
     height: 70px;
     width:70px;
     background-image: url("pictoreal\ logo.png"); 
     background-size: cover;
     margin: 10px 60px 10px 10px;
 }
-.write{
+.main_body .write{
     padding-left: 65px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.write #club-id{
+.main_body .write #club-id{
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
 }
 
-.write #club-name{
+.main_body .write #club-name{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -225,7 +245,7 @@ nav{
 }
 
 
-.post .poster{
+.main_body .post .poster{
     height: 100px;
     width:100px;
     background-image: url("pictofest.jpg");
@@ -239,24 +259,42 @@ nav{
     margin-left: 85px;
 }
 
-.post .footer{
+.main_body .post .footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 20px;
     margin:30px;
     cursor: pointer;
+    color:rgb(21, 55, 75);
 }
 
 .recomend{
     margin-top:30px;
     margin-left:62px;
-    height:100vh;
+    height:300px;
     width:40vh;
    padding: 20px 0;
    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
-   background-color: #ffe6a7;
+   background-color: #BED1CF;
    border-radius: 8px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(33, 69, 90);
+    border-radius: 10px;
+}
+
+.scrollbox{
+    overflow: auto;
+    
+}
+
+.scrollbox-inner{
+    height:max-content;
 }
 
 .recomend .name{
@@ -265,14 +303,17 @@ nav{
     font-style: italic;
     font-weight:bold;
     margin-left: 20px;
+    color:rgb(33, 69, 90);
 }
 
 .recomend .lists2{
     margin:20px;
-    height:50px;
+    height:170px;
     width:200px;
     border:2px solid transparent;
     padding:2px 1px 15px 1px;
+    color:rgb(33, 69, 90);
+    font-weight: bold;
 
 }
 .lists2 .list2{
