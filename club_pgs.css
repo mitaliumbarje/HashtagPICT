@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    margin-top: 20px ;
+    height:360px;
+    border-bottom:2px solid white;
+    background:linear-gradient(to top,#31363F,#76ABAE);
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar1{
+    height: 360px;
+    /* width:680px; */
+    
+    display:flex;
+    flex-direction: row;
+}
+
+#profilepic{
+    height:189px;
+    width:189px;
+    border:2px solid black;
+    border-radius:50%;
+    padding: 50px;
+    margin:20px 20px 20px 40px;
+    background-image: url("profilepic1.png");
+    background-size: cover;
+
+}
+#profilepic img{
+    width: 200px;
+    align:center;
+}
+#details{
+    height:200px;
+    font-size: 20px;
+    padding:1px 2px 10px 4px;
+    vertical-align: center;
+    margin-left:60px;
+    line-height: 50px;
+    color:white;
+}
+
+#info{
+    height:200px;
+    width: max-content;
+    font-size: 20px;
+    padding:1px 2px 10px 4px;
+    /* margin-left:40px; */
+    line-height: 50px;
+    color:white;
+}
+main{
+    height:fit-content;
+    background-color:black;
+}
+
+.actual_body{
+    height:500px;
+    display:flex;
+    flex-direction: row;
+}
+.navbar2{
+    height: 200px;
+    width:520px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+}
+
+
+#friends{
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+#list{
+    list-style: none;
+    line-height: 25px;
+    padding-right: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+
+.bio{
+    padding-left:25px;
+    padding-right: 25px;
+    width:1000px;
+    border-right:5px solid white;
+    padding-top: 10px;
+    color:white;
+}
+
+#a{
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height:500px;
+    width:500px;
+}
+
+.posts{
+    padding-left:25px;
+    width:800px;
+    color:white;
+
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius: 10px;
+}
+
+.scrollbar{
+    height: 100%;
+    width: 130px;
+    border: 1px solid grey;
+    overflow: auto;
+    
+}
+
+.scrollbox-inner{
+    height:max-content;
+}
+
+#personal_details{
+    h1{
+        text-align: center;
+    }
+    font-size: 20px; 
+    line-height: 50px;
+}
+
+#pic{
+    padding-top: 10px;
+    h1{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+}
+
+#img{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding:20px 20px 20px 0px;
+}
+
+#img1{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature1.jpg");
+    background-size: cover;
+}
+
+#img2{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature2.jpg");
+    background-size: cover;
+}
+
+#img3{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature3.jpg");
+    background-size: cover;
+}
+
+#img4{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature4.jpg");
+    background-size: cover;
+}
+
+#img5{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature5.jpg");
+    background-size: cover;
+}
+
+#img6{
+    margin:1px;
+    height:180px;
+    width:180px;
+    background-image: url("nature6.jpg");
+    background-size: cover;
+}
+
+
+/* #foot{
+    background:linear-gradient(to top,#31363F,#76ABAE);
+    height:50px;
+    border-top:3px solid white;
+    padding-top: 10px;
+    text-align: center; */
+/* } */
+.button{
+    border: none;
+    background:none;
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    cursor: pointer;
+}
+
+posts::-webkit-scrollbar{
+    width:15px;
+}
+
+posts::-webkit-scrollbar-track{
+    background: white;
+}
+
+posts::-webkit-scrollbar-thumb{
+    background: white;
+}
