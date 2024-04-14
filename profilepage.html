@@ -11,7 +11,9 @@
     <header>
         <div class="navbar">
             <div class="navbar1">
-                <div id="profilepic"></div>
+                <div id="profilepic">
+                    <img src="profilepic1.png">
+                </div>
                     <div id="details">
                         <h4><u>Username :</u></h4>
                         <h4><u>Name :</u></h4>
@@ -31,6 +33,9 @@
                     <i class="fa-solid fa-bell">  NOTIFICATIONS</i><br><br>
                     <i class="fa-solid fa-gear">  SETTINGS</i>
                 </div>
+        </div>
+        <div class="add-post">
+            <label for="add-post" class="btna btna-primary mini-button" id="crate-lg" >Add Post</label>
         </div>
     </header>
 <main>
@@ -54,22 +59,62 @@
                         <h1><u>POSTS</u></h1>
                     </div>
                 <div id="img">
-                <div id="img1"></div>
-                <div id="img2"></div>
-                <div id="img3"></div>
-                <div id="img4"></div>
-                <div id="img5"></div>
-                <div id="img6"></div>
+                <img width="225" height="225" src="nature1.jpg">
+                <img width="225" height="225" src="nature2.jpg">
+                <img width="225" height="225" src="nature3.jpg">
+                <img width="225" height="225" src="nature4.jpg">
                 </div>
             </div>
         </div>
     </div>
     </div>
+
+    <div class="popup profile-popup">
+        <div>
+            <div class="popup-box profile-popup-box">
+                <H1>Tanvi Somani</H1>
+                <p>@tanu.somani_16</p>
+                <div class="my-profile-picture">
+                    <img src="profilepic.jpg">
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">Update Prfoile</label>
+                <input type="file" accept="image/jpg ,image/png image/jpeg " id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    <div class="popup add-post-popup">
+        <div>
+            <form class="popup-box post-popup-box">
+                <h1>
+                    Add New Post
+                </h1>
+                <div class="row post-title">
+                    <lable>Title</lable>
+                    <input type="text" id="add-post">
+                </div>
+                <div class="row post-img">
+                    <img width="200" height="200" src="" id="postimg">
+                    <label for="feed-pic-upload" class="feed-upload-button">
+                        <span><i class="fa fa-add"></i></span>
+                        Upload A Picture
+                    </label>
+                    <input type="file" accept="image/jpg, image,png, image/jpeg" id="feed-pic-upload">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Add Post">
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
 </main>
-<footer>
+<!-- <footer>
     <div id="foot">
         <button class="button">Logout</button>
     </div>
-</footer>
+</footer> -->
+
+<script src="script.js"></script>
 </body>
 </html>
